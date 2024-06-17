@@ -21,7 +21,7 @@ class Student : public Person{
 public:
     int rollno;
 
-    Student(string name, int age, int rollno) : Person(string name, int age){
+    Student(string name, int age, int rollno) : Person(name,age){
         this->rollno = rollno;
     }
 
@@ -36,10 +36,10 @@ public:
 
 
 int main(){
-    Student s1("Deepak Singh",);
+    Student s1("Deepak Singh",21,1234);
     
     s1.getInfo();
 
-
+    
     return 0;
 }
