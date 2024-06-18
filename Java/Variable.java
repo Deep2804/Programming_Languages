@@ -15,7 +15,21 @@ public class Variable {
       // String myText = "Hello";
 
 
-      String name = "John";
-      System.out.println("Hello " + name);
+      // String name = "John";
+      // System.out.println("Hello " + name);
+
+
+      // String firstName = "John ";
+      // String lastName = "Doe";
+      // String fullName = firstName + lastName;
+      // System.out.println(fullName);
+
+
+      // int x = 5;
+      // int y = 6;
+      // System.out.println(x + y);
+
+      int x = 5, y = 6, z = 50;
+      System.out.println(x + y + z);
     }
   }
