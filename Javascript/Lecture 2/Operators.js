@@ -2,7 +2,7 @@
 // used to perform some operation on data
 
 
-// Arithmetic Operator
+// ---Arithmetic Operator---
 // let a = 5;
 // let b = 2;
 // // let  c = a+b;
@@ -20,7 +20,7 @@
 // // Exponentiation
 // console.log("a ** b = ", a ** b);
 
-// Unary Operator
+// ---Unary Operator---
 // 1. Increment
 // 2. Decrement
 
@@ -46,7 +46,8 @@
 // // Pre Decrement
 // console.log("--a = ", --a);
 
-// Assignment Operator - =, +=, -=, *=, %=, **=
+// ---Assignment Operator--- 
+// - =, +=, -=, *=, %=, **=
 // let a = 5;
 // let b = 2;
 
@@ -70,7 +71,7 @@
 
 
 
-// Comparison Operator
+// ---Comparison Operator---
 // 1. Equal to - ==
 // 2. Equal to & type  - ===
 // 3. Not Equal to -!=
@@ -108,7 +109,7 @@
 // // 8. less than equal to - <=
 // console.log("a <= b", a <= b);
 
-// Logical Operator
+// ---Logical Operator---
 // 1. Logical AND &&
 // 2. Logical OR ||
 // 3. Logical NOT !
@@ -151,3 +152,15 @@ let a = 5;
 let b = 3;
 
 console.log("!(a > b) = ", !(a>b));
+
+// ---Ternary Operator---
+// condition ? true output : false output
+let age = 25;
+
+let result = age >= 18 ? "adult" : "Not adult";
+console.log(result);
+
+age >= 18 ? console.log("adult") : console.log("not adult");
+
+
+
