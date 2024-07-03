@@ -40,3 +40,43 @@ let calcSquare = (nums) =>{
 };
 
 nums.forEach(calcSquare);
+
+
+// Question 4: We are given array of marks of students. Filter out of the marks
+// of students that scored 90+.
+
+let marks = [97,64,34,56,45];
+
+let topperArr = marks.filter((val)=> {
+    return val>90;
+})
+
+console.log(topperArr);
+
+
+// Question 5: Take a number n as an input from user. Create an array of numbers
+// from 1 to n.
+// Use the reduce method to calculate sum of all numbers in the array.
+// Use the reduce method to calculate products of all numbers in the array.
+//
+let n = prompt("Enter a number");
+
+let arr = [];
+
+for(let i=1;i<=n;i++){
+    arr[i-1] = i; 
+}
+
+console.log(arr);
+
+let sum = arr.reduce((res, curr) =>{
+    return res + curr;
+})
+
+console.log(sum);
+
+let mul = arr.reduce((res, curr) =>{
+    return res * curr;
+})
+
+console.log(mul);
