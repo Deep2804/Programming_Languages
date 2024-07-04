@@ -17,9 +17,9 @@
 
 //  console.log(document.body);
 
-//  document.body.style.background = "green";
+ document.body.style.background = "green";
 
-//  document.body.childNodes[2].innerText = "abcd";
+ document.body.childNodes[2].innerText = "abcd";
 
 
 // DOM Manipulation
@@ -67,3 +67,15 @@ let firElements = document.querySelector(".myClass");
 console.dir(firElements);
 
 // 2. innerText:
+let div  = document.querySelector("div");
+console.dir(div);
+
+// div.innerHTML;
+// div.innerText;
+
+// 3. innerHTML
+
+div.innerHTML ="<div><i>Old Div</i></div>";
+
+// textContent
+let heading = document.querySelector("h1");
