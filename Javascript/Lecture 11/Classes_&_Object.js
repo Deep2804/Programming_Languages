@@ -11,21 +11,21 @@
 //     },
 // };
 
-const employee = {
-    calcTax(){
-        console.log("Tax Rate is 10%");
-    },
-    calcTax2 : function (){
-        console.log("tax rate is 10%");
-    }
-};
+// const employee = {
+//     calcTax(){
+//         console.log("Tax Rate is 10%");
+//     },
+//     calcTax2 : function (){
+//         console.log("tax rate is 10%");
+//     }
+// };
 
-const karanArjun1 = {
-    salary: 25000,
-    calcTax(){
-        console.log("tax rate is 20%"); 
-    }
-};
+// const karanArjun1 = {
+//     salary: 25000,
+//     calcTax(){
+//         console.log("tax rate is 20%"); 
+//     }
+// };
 // const karanArjun2 = {
 //     salary: 25000,
 
@@ -39,7 +39,7 @@ const karanArjun1 = {
 
 // };
 
-karanArjun1.__proto__ = employee;
+// karanArjun1.__proto__ = employee;
 // karanArjun2.__proto__ = employee;
 // karanArjun3.__proto__ = employee;
 // karanArjun4.__proto__ = employee;
@@ -60,31 +60,31 @@ karanArjun1.__proto__ = employee;
 
 // let myObj = new MyClass();
 
-class ToyotaCar {
-    constructor(brand,mileage){
-        console.log("Creating new Object");
-        this.brand = brand;
-        this.mileage = mileage;
-    }
+// class ToyotaCar {
+//     constructor(brand,mileage){
+//         console.log("Creating new Object");
+//         this.brand = brand;
+//         this.mileage = mileage;
+//     }
 
-    start(){
-        console.log("start");
-    }
+//     start(){
+//         console.log("start");
+//     }
 
-    stop(){
-        console.log("stop");
-    }
-    // setBrand(brand){
-    //     this.brandName = brand;
-    // }
-}
+//     stop(){
+//         console.log("stop");
+//     }
+//     // setBrand(brand){
+//     //     this.brandName = brand;
+//     // }
+// }
 
 
-let fortuner = new ToyotaCar("fortuner",10);
-console.log(fortuner);
-// fortuner.setBrand("fortuner");
-let lexus = new ToyotaCar("lexus",12);
-console.log(lexus);
+// let fortuner = new ToyotaCar("fortuner",10);
+// console.log(fortuner);
+// // fortuner.setBrand("fortuner");
+// let lexus = new ToyotaCar("lexus",12);
+// console.log(lexus);
 // fortuner.setBrand("lexus");
 
 
@@ -96,3 +96,63 @@ console.log(lexus);
 //     constructor(){...}
 //     myMethod(){...}
 // }
+
+
+
+// Inheritence in JS
+// Inheritence is passing down properties & methods from parent class to child class.
+// 
+// class Parent{
+
+// }
+
+// class child extends Parents {
+
+// }
+
+
+// * If child and parent have same method, child method should be used.[Method Overriding]
+
+// class Parent{
+//     hello(){
+//         console.log("Hello");
+//     }
+
+// }
+
+// class child extends Parent{
+
+// }
+
+// let obj = new child();
+
+class Person{
+    eat(){
+        console.log("Eating");
+    }
+    sleep(){
+        console.log("Sleeping");
+    }
+    work(){
+        console.log("Working");
+    }
+
+
+}
+
+
+
+class Engineer extends Person{
+    work(){
+        console.log("Do coding");
+    }
+}
+
+class Doctor extends Person{
+    work(){
+        console.log("Treat Patient");
+    }
+}
+
+let deepak = new Engineer();
+
