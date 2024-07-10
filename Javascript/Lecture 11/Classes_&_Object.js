@@ -126,33 +126,102 @@
 
 // let obj = new child();
 
+// class Person{
+
+//     constructor(){
+//         this.species = "Homo Sapiens";
+//     }
+
+//     eat(){
+//         console.log("Eating");
+//     }
+//     sleep(){
+//         console.log("Sleeping");
+//     }
+//     work(){
+//         console.log("Working");
+//     }
+
+
+// }
+
+
+
+// class Engineer extends Person{
+//     work(){
+//         console.log("Do coding");
+//     }
+// }
+
+// class Doctor extends Person{
+//     work(){
+//         console.log("Treat Patient");
+//     }
+// }
+
+// let deepak = new Engineer();
+
+
+// ***----Siper Keyword---***
+// The super keyword is used to call the constructor of its parent class to accept the parent's
+// properties and methods
+
+// super(args)  // calls Parent constructor
+// super.parentMethod(args)
+
 class Person{
+
+    constructor(name){
+       // console.log("Enter Parent Constructor");
+        this.species = "Homo Sapiens";
+        this.name = name;
+    }
+
     eat(){
         console.log("Eating");
     }
-    sleep(){
-        console.log("Sleeping");
-    }
-    work(){
-        console.log("Working");
-    }
-
-
 }
-
-
 
 class Engineer extends Person{
-    work(){
-        console.log("Do coding");
+    constructor(name){
+       // console.log("Enter Child Constructor");
+        super(name);
+      //  this.branch = branch;
+       // console.log("Exit Child Constructor");
+    }
+
+     work(){
+        super.eat();
+     console.log("Do coding");
     }
 }
 
-class Doctor extends Person{
-    work(){
-        console.log("Treat Patient");
-    }
-}
+let deepak = new Engineer("Deepak");
 
-let deepak = new Engineer();
+
+
+// ***--- Error Handling ---***
+// try-catch
+// try{
+// ...normal code
+// } catch(err){ // err is error object
+// ...handling error
+// }
+
+
+let a = 5;
+let b = 10;
+console.log("a =",a);
+console.log("b =",b);
+console.log("a+b =",a+b);
+try{
+    console.log("a+b =",a+c); // Error
+} catch(err){
+    console.log(err);
+}
+ 
+console.log("a+b =",a+b);
+console.log("a+b =",a+b);
+console.log("a+b =",a+b);
+console.log("a+b =",a+b);
 
